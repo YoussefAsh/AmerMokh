@@ -12,6 +12,11 @@
     <title>Hello, world!</title>
   </head>
   <body>
+    <div class="container-fluid loader">
+
+      <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          </div>
+          
     <nav class="navbar navbar-expand-lg navbar-light homeNav">
       <a class="navbar-brand" href="#"><img src="./assets/logos/amer.png"><span class="navSpan">AMER MOKHALLATI</span></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -209,5 +214,9 @@ Creating Clean, Beautiful, Interactive, Minimalistic, blaa blaa blaaa.....
     <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script>window.addEventListener("load", function(){
+  const loader = document.querySelector(".loader");
+  loader.className +=" hidden";
+})</script>
   </body>
 </html>
