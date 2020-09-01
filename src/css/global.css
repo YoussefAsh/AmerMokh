@@ -60,38 +60,46 @@ body{
     width:100%;
     height:100vh;
     font-family: geo;
-
+    display:flex;
+    justify-content: space-between;
 }
 
 .bioText{
     position:relative;
-    height:43%;
+    height:75%;
     display:flex;
     flex-direction: column;
-    justify-content:space-between;
+    align-items:flex-end;
+    justify-content: center;
     color:white;
     font-size:24px;
+    width:50%;  
 }
 
 .bioIntro{
-    position:absolute;
-    padding-left:13.5%;
-    padding-top:12%;
-    height:50px;
-    width:100%;
+    width:70%;
     font-size:1.5vw;
+    padding-bottom:20px;
 }
 
 h1{
     font-size:3vw;
+
 }
 
 .bioFill{
-    position:absolute;
-    height:50px;
-    width:600px;
-    padding-top:19%;
-    padding-left:14%;
+width:70%;
+}
+
+.bioSign{
+display:flex;
+align-items:flex-end;
+width:35%;
+height:90%;
+}
+
+.bioSign > img{
+    height:200px;
 }
 
 .services{
@@ -123,13 +131,16 @@ h1{
     flex-wrap:wrap;
     justify-content: center;
     width:100%;
-    margin-top:30px;
+    margin-top:40px;
+    margin-bottom:40px;
 }
 
 .aService{
     position:relative;
     width:20%;
     margin: 35px;
+    margin-top:20px;
+    margin-bottom:20px;
     border-radius:2%;
 }
 
@@ -177,22 +188,30 @@ h1{
     justify-content:space-around;
     flex-wrap:wrap;
     width:100%;
-    margin-top:30px;
+    margin-top:15px;
+    margin-bottom:15px;
 }
 
 .aCredential{
     display:flex;
     justify-content:center;
     align-items:center;
-    flex: 1 0 21%;
+    width:20%;
     margin: 10px;
+    margin-top:30px;
+    margin-bottom:30px;
     height:150px;
 }
 
+
 .aCredential > img{
- width:100%;
+ width:70%;
  filter:grayscale(100%);
  transition:.5s all;
+}
+
+.pringle{
+    width:40% !important;
 }
 
 .aCredential > img:hover{
@@ -258,7 +277,7 @@ margin:5px;
 }
 
 .contactFiller{
-    height:700px;
+    height:110vh;
     width:100%;
     display:flex;
     justify-content:center;
@@ -270,12 +289,15 @@ margin:5px;
     height:100%;
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
+}
+
+.contact1 > div{
+    margin:20px;
 }
 
 .contact2{
     width:49%;
-    height:100%;
+    height:80%;
     display:flex;
     align-items:center;
     justify-content: flex-end;
@@ -307,6 +329,7 @@ font-size:3vw;
 
 .redBorder{
     mix-blend-mode: color;
+    width:80%;
 }
 
 .dropDesc{
@@ -347,7 +370,7 @@ form{
     display:flex;
     flex-direction: column;
     align-items:flex-start;
-    justify-content: flex-end;
+    justify-content: center;
     height:80%;
 }
 
@@ -621,29 +644,54 @@ button{
 
         .bio{
             background:url('../assets/textures/chalk.png');
-            height:50vh;
+            height:70vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+        }
+
+        .bioText{
+            align-items:center;
+            justify-content: center;
+            width:100%;
+            padding:20px;
+            height:60%;
         }
         .bioIntro{
             position:relative;
             font-size:20px;
             display:flex;
             flex-direction: column;
+            width:90%;
         }
         .bioIntro > h1{
             font-size:40px;
         }
+        .bioSign{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            height:30%;
+        }
+        .bioSign > img{
+            height:80%;
+        }
         .bioFill{
-            width:400px;
+            width:90%;
             position:relative;
+        }
+
+        .aCredential{
+            width:45%;
         }
         .redBorder{
             width:150px;
         }
         .contactFiller{
-            height:400px;
+            height:60vh
         }
         .contact1{
-            height:100%;
+            height:100;
             width:80%;
         }
         .contact1Title{
@@ -681,25 +729,6 @@ button{
             width:40%;
             margin:10px;
         }
-
-        .spotnet{
-            width:130px !important;
-        }
-        .chev{
-            width:130px !important;
-        }
-        .mill{
-            width:160px !important;
-        }
-        .polaris{
-            width:200px !important;
-        }
-
-        .divine{
-            width:140px !important;
-
-        }
-
         .aboutItem{
             width:70%;
         }
