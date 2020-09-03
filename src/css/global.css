@@ -4,7 +4,7 @@
 }
 
 body{
-    background:url('../assets/textures/chalk.png')
+    background:url('../assets/textures/chalk.png');
 }
 
 @font-face {
@@ -277,7 +277,7 @@ margin:5px;
 }
 
 .contactFiller{
-    height:110vh;
+    height:100vh;
     width:100%;
     display:flex;
     justify-content:center;
@@ -638,9 +638,7 @@ button{
   }
 
     @media (max-width:768px){
-        .navSpan{
-            display:none;
-        }
+
 
         .bio{
             background:url('../assets/textures/chalk.png');
@@ -788,3 +786,188 @@ button{
     }
 
     
+    /* CHEVROLET */
+
+.chevBody{
+    background: url('../assets/chevrolet/ChevBigBG.png');
+    background-size: 100%;
+}
+    
+ .navBGChev{
+    position: absolute;
+    width:88%;
+    height:100%;
+    z-index:-1;
+    right:0;
+    mix-blend-mode: color;
+
+ }
+
+ .navbarChev{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding:0 !important;
+    margin:0 !important;
+    width:12%;
+    height:100%;
+    cursor:default;
+
+ }
+
+ .navbarChev > img{
+    padding-top:25px;
+ }
+
+ .chevLogo{
+     width:80%;
+ }
+
+ .chevContainer{
+    display: flex;
+    width:100%;
+    flex-direction: column;;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .chevTitleContainer{
+     width:100%;
+     display:flex;
+     justify-content: space-around;
+ }
+
+ .chevTitle{
+     width:100%;
+     display:flex;
+     flex-direction: column;
+     align-items:center;
+     font-family: geo;
+     color:white;
+     font-size:3.1vw;
+     margin-top:5%;
+     line-height:0;
+ }
+
+ .chevTitlePic{
+     display:flex;
+     justify-content: flex-end;
+     align-items:center;
+     width:50%;
+ }
+
+ .chevTitlePic > img{
+    width:50%;
+}
+
+.chevDesign{
+    position:relative;
+    display: flex;
+    align-items:flex-end;
+    width:40%;
+}
+
+.chevDesign > img{
+   width:50%;
+}
+
+ .chevPic{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:75%;
+    padding-bottom:30px;
+ }
+
+ .chevPic > img {
+     width:100%;
+ }
+ .end{
+     display:flex;
+     justify-content: center;
+     align-items:flex-end;
+     width:80%;
+     margin-bottom:-10px;
+ }
+
+ .end > img{
+     width:15%;
+
+ }
+
+ .rightTitleChev{
+    color:white;
+    font-family:geo;
+    display:flex;
+    font-size:1vw;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    background-image:url('../assets/chevrolet/chevRights.png');
+    background-size: cover;
+    background-position:center;
+    padding:15px;
+    }
+ @media (max-width:768px){
+
+    .navbarChev > img{
+        padding-top:25px;
+        padding-bottom:5px;
+     }
+
+    .chevBody{
+        background-size: cover;
+    }
+
+    .navBGChev{
+        width:100%;
+    }
+
+    .navbarChev{
+        width:30%;
+    }
+    .chevTitle{
+        font-size:36px;
+        margin-top:50px;
+        margin-bottom:10px;
+    }
+
+    .chevTitlePic > img{
+        width:70%;
+    }
+
+    .chevTitlePic{
+        width:100%;
+    }
+
+    .chevDesign{
+        width:100%;
+        justify-content: flex-end;
+    }
+
+     .chevPic{
+        width:95%;
+     }    
+      .navbar-collapse{
+        flex-basis: 100% !important;
+        flex-grow: 1 !important;
+
+     }
+
+     .end{
+        height:70px;
+     }
+
+     .end > img{
+         width:40%;
+     }
+     .rightTitleChev{
+         position: absolute;
+         bottom:0;
+     }
+
+     .chevBody{
+        background-size: contain;
+
+     }
+ }
