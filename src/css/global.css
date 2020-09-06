@@ -1923,43 +1923,43 @@ width:100%;
 }
 
 .divineBody{
-    background: url('../assets/BG/divineBG.png');
+    background: url('../assets/BG/realBG.png');
     background-size: 100%;
 }
 
 .millBody{
-    background: url('../assets/BG/millBG.png');
+    background: url('../assets/BG/realBG.png');
     background-size: 100%;
 }
 
 .mobilyBody{
-    background: url('../assets/BG/mobilyBG.png');
+    background: url('../assets/BG/realBG.png');
     background-size: 100%;   
 }
 
 .nvidiaBody{
-    background: url('../assets/BG/nvidiaBG.png');
+    background: url('../assets/BG/realBG.png');
     background-size: 100%;   
 }
 
 .pringlesBody{
-    background: url('../assets/BG/pringlesBG.png');
+    background: url('../assets/BG/realBG.png');
     background-size: 100%;   
 }
 
 
 .redBullBody{
-    background: url('../assets/BG/redbullBG.png');
+    background: url('../assets/BG/realBG.png');
     background-size: 100%;   
 }
 
 
 .rushBody{
-    background: url('../assets/BG/rushBG.png');
+    background: url('../assets/BG/realBG.png');
     background-size: 100%;   
 }
 
 .spotnetBody{
-    background: url('../assets/BG/spotnetBG.png');
+    background: url('../assets/BG/realBG.png');
     background-size: 100%;   
 }
