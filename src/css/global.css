@@ -1028,6 +1028,10 @@ button{
     }
  @media (max-width:768px){
 
+    .navbarBrandP > img {
+        height:50px;
+     }
+
     .navbarChev > img{
         padding-top:25px;
         padding-bottom:5px;
@@ -1402,7 +1406,7 @@ button{
     }
 
     .divineTitle{
-        font-size:30px;
+        font-size:24px;
         padding-top: 15px;
         padding-bottom:15px;
     }
@@ -1758,6 +1762,7 @@ width:40%;
     width:100%;
     display:flex;
     justify-content: center;
+    align-items:center;
 }
 
 .pringlesCup > img{
@@ -1782,6 +1787,7 @@ width:40%;
     width:100%;
 display:flex;
 justify-content: center;
+align-items:center;
 }
 
 .showLine1 > img{
@@ -1793,6 +1799,8 @@ justify-content: center;
     width:100%;
     display:flex;
     justify-content: center;
+    align-items:center;
+
 }
 
 .showLine2 > img{
