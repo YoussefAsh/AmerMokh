@@ -1124,7 +1124,6 @@ button{
     /* ATYAB */
 
     .atyabBody{
-
             background: url('../assets/Atyab/atyabBG.png');
             background-size: 100%;
         }
@@ -1913,4 +1912,46 @@ width:100%;
     font-size:12px;
     font-family: geo;
 
+}
+
+.divineBody{
+    background: url('../assets/BG/divineBG.png');
+    background-size: 100%;
+}
+
+.millBody{
+    background: url('../assets/BG/millBG.png');
+    background-size: 100%;
+}
+
+.mobilyBody{
+    background: url('../assets/BG/mobilyBG.png');
+    background-size: 100%;   
+}
+
+.nvidiaBody{
+    background: url('../assets/BG/nvidiaBG.png');
+    background-size: 100%;   
+}
+
+.pringlesBody{
+    background: url('../assets/BG/pringlesBG.png');
+    background-size: 100%;   
+}
+
+
+.redBullBody{
+    background: url('../assets/BG/redbullBG.png');
+    background-size: 100%;   
+}
+
+
+.rushBody{
+    background: url('../assets/BG/rushBG.png');
+    background-size: 100%;   
+}
+
+.spotnetBody{
+    background: url('../assets/BG/spotnetBG.png');
+    background-size: 100%;   
 }
