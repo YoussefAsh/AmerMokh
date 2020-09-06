@@ -19,17 +19,40 @@ body{
   .homeNav{
     display:flex !important; 
     justify-content:space-between !important; 
+    height:65px;
  }
-
 
  .navSpan{
     padding-left:10px;
 }
 
-
  .navbar-brand{
      color:white !important;
      font-family:geo;
+ }
+
+ .navbarBrand{
+     height:100%;  
+     width:12%; 
+     display:flex;
+     justify-content: center;
+     align-items:center;
+ }
+
+ .navbarBrand > img {
+    width:70%;
+ }
+
+ .navbarBrandP{
+    height:100%;  
+    width:12%; 
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+ .navbarBrandP > img {
+    height:100%;
  }
 
  .navbar-nav{
@@ -52,6 +75,15 @@ body{
     left:0;
     mix-blend-mode: color;
  
+ }
+
+ .navBG2{
+    position: absolute;
+    width:88%;
+    height:100%;
+    z-index:-1;
+    right:0;
+    mix-blend-mode: color;
  }
 
 .bio{
@@ -497,6 +529,89 @@ button{
     }
 
 
+    .rightTitleMobily{
+        color:white;
+        font-family:geo;
+        display:flex;
+        font-size:1vw;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+        background-image:url('../assets/mobily/end.png');
+        background-size: cover;
+        background-position:center;
+        padding:15px;
+        }
+
+
+    .rightTitlePringles{
+        color:white;
+        font-family:geo;
+        display:flex;
+        font-size:1vw;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+        background-image:url('../assets/pringles/end.png');
+        background-size: cover;
+        background-position:center;
+        padding:15px;
+        }
+
+        .rightTitleRedbull{
+            color:white;
+            font-family:geo;
+            display:flex;
+            font-size:1vw;
+            justify-content:center;
+            align-items:center;
+            width:100%;
+            background-image:url('../assets/redbull/end.png');
+            background-size: cover;
+            background-position:center;
+            padding:15px;
+            }
+
+            .rightTitleRush{
+                color:white;
+                font-family:geo;
+                display:flex;
+                font-size:1vw;
+                justify-content:center;
+                align-items:center;
+                width:100%;
+                background-image:url('../assets/rush/end.png');
+                background-size: cover;
+                background-position:center;
+                padding:15px;
+                }
+                .rightTitleRush{
+                    color:white;
+                    font-family:geo;
+                    display:flex;
+                    font-size:1vw;
+                    justify-content:center;
+                    align-items:center;
+                    width:100%;
+                    background-image:url('../assets/rush/end.png');
+                    background-size: cover;
+                    background-position:center;
+                    padding:15px;
+                    }
+                    .rightTitleSpotnet{
+                        color:white;
+                        font-family:geo;
+                        display:flex;
+                        font-size:1vw;
+                        justify-content:center;
+                        align-items:center;
+                        width:100%;
+                        background-image:url('../assets/spotnet/end.png');
+                        background-size: cover;
+                        background-position:center;
+                        padding:15px;
+                        }
+
 .loader {
     position: fixed;
     z-index: 99999999;
@@ -638,7 +753,9 @@ button{
   }
 
     @media (max-width:768px){
-
+        .homeNav{
+            height:auto;
+        }
 
         .bio{
             background:url('../assets/textures/chalk.png');
@@ -806,21 +923,21 @@ button{
  .navbarChev{
     display:flex;
     justify-content: center;
-    align-items:center;
+    align-items:flex-end;
     padding:0 !important;
     margin:0 !important;
     width:12%;
-    height:100%;
+    height:90%;
     cursor:default;
 
  }
 
  .navbarChev > img{
-    padding-top:25px;
  }
 
  .chevLogo{
-     width:80%;
+    width:70%;
+
  }
 
  .chevContainer{
@@ -886,12 +1003,13 @@ button{
      display:flex;
      justify-content: center;
      align-items:flex-end;
-     width:80%;
+     width:100%;
+     margin-top:20px;
      margin-bottom:-10px;
  }
 
  .end > img{
-     width:15%;
+     width:10%;
 
  }
 
@@ -919,7 +1037,7 @@ button{
         background-size: cover;
     }
 
-    .navBGChev{
+    .navBG2{
         width:100%;
     }
 
@@ -971,3 +1089,828 @@ button{
 
      }
  }
+
+ /* POLARIS */
+
+ .navbarPolaris{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding:0 !important;
+    margin:0 !important;
+    width:12%;
+    height:100%;
+    cursor:default;
+ }
+
+ .polarisLogo{
+     width:90%;
+ }
+
+ .rightTitlePolaris{
+    color:white;
+    font-family:geo;
+    display:flex;
+    font-size:1vw;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    background-image:url('../assets/polaris/EndBar.png');
+    background-size: cover;
+    background-position:center;
+    padding:15px;
+    }
+
+    /* ATYAB */
+
+    .atyabBody{
+
+            background: url('../assets/Atyab/atyabBG.png');
+            background-size: 100%;
+        }
+    
+
+    .navbarAtyab{
+        display:flex;
+        justify-content: center;
+        align-items:flex-end;
+        padding:0 !important;
+        margin:0 !important;
+        width:12%;
+        height:90%;
+        cursor:default;
+    
+     }
+
+    .atyabLogo{
+        width:80%;
+    }
+
+    .rightTitleAtyab{
+        color:white;
+        font-family:geo;
+        display:flex;
+        font-size:1vw;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+        background-image:url('../assets/Atyab/endBar.png');
+        background-size: cover;
+        background-position:center;
+        padding:15px;
+    }
+
+    .atyabTitleContainer{
+        width:100%;
+        display:flex;
+        justify-content: space-around;
+    }
+
+    .atyabTitle{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        font-family: geo;
+        color:white;
+        font-size:3.1vw;
+        margin-top:5%;
+        line-height:0;
+    }
+   
+   
+    .atyabTitlePic{
+        display:flex;
+        justify-content: flex-end;
+        align-items:center;
+        width:45%;
+    }
+   
+    .atyabTitlePic > img{
+       width:40%;
+   }
+
+   .atyabVidContainer{
+    display: flex;
+    justify-content:center;
+    margin-bottom:40px;
+   }
+
+    .atyabVid{
+        height:476px;
+        width:476px;
+    }
+
+    .atyabVid2{
+        height:476px;
+        width:247px;
+    }
+
+    .atyabFrame{
+        width:100%;
+        height:100%;
+    }
+
+    .atyabBar{
+        width:100%;
+        text-align:center;
+        margin-top:60px;
+    }
+
+    .atyabBar > img{
+        width:60%;
+    }
+
+    /* DIVINE VENDETA*/
+
+    
+
+    .divineContainer{
+        margin-top:3vw;
+    }
+
+
+   .divineVidContainer{
+    display: flex;
+    justify-content:center;
+   }
+
+
+    .divineTitleContainer{
+        width:100%;
+        display:flex;
+        justify-content: space-around;
+    }
+
+    .divineTitle{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        font-family: geo;
+        color:white;
+        font-size:3.1vw;
+        margin-bottom:3vw;
+    }
+    
+    .divineTitleW{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        font-family: geo;
+        color:white;
+        font-size:3.1vw;
+    }
+   
+   
+    .divineTitlePic{
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        width:55%;
+    }
+   
+
+    .divineTitlePic > img{
+       width:12%;
+   }
+
+
+   .divineVid{
+    display:flex;   
+    justify-content: center;
+    width:100%;
+    height:500px;
+}
+
+.divineFrame{
+    width:60%;
+    height:100%;
+}
+
+.divinePic{
+    display:flex;   
+    justify-content: center;
+    align-items: center;
+}
+
+.divinePic > img{
+}
+
+
+.divineFrame2{
+    width:60%;
+    height:100%;
+}
+
+.divineFrame3{
+    width:70%;
+}
+
+
+.divineSlash{
+    display: flex;
+    align-items: center;
+    width:20%;
+    height:80%;
+    padding-left:20px;
+}
+
+.divineSlash > img{
+    width:70%;
+}
+
+.divinePubg{
+    display: flex;
+    align-items: center;
+    width:20%;
+    height:80%;
+}
+
+.divinePubg > img{
+    width:70%;
+}
+
+
+.divineBar{
+    margin-top:4vw;
+    width:100%;
+    text-align:center;
+}
+
+.divineBar > img{
+    width:50%;
+}
+
+.divineClothesContainer{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.divineClothes{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width:65%;
+}
+
+.divineClothes > img{
+    width:98%;
+    padding-top:1vw;
+    padding-bottom:4vw;
+}
+
+.divineBG{
+    background:url('../assets/divine/Asset\ 17.png');
+    mix-blend-mode: color;
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width:65%;
+}
+.bug{
+    position:relative;
+    width:98%;
+    padding-top:1vw;
+    padding-bottom:4vw;
+
+}
+
+.rightTitleDivine{
+    color:white;
+    font-family:geo;
+    display:flex;
+    font-size:1vw;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    background-image:url('../assets/divine/divineRights.png');
+    background-size: cover;
+    background-position:center;
+    padding:15px;
+}
+
+@media (max-width:768px){
+
+    .divineBar{
+        margin-top:0;
+    }
+
+    .divineTitle{
+        font-size:30px;
+        padding-top: 15px;
+        padding-bottom:15px;
+    }
+
+    .divineTitlePic{
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        width:75%;
+    }
+
+   
+    .divineTitlePic > img{
+       width:15%;
+   }
+
+    .divineContainer{
+        margin-bottom:5px;
+    }
+
+    .divineFrame{
+        width:100%;
+    }
+
+    .divineVid{
+        height:250px;
+    }
+
+    .divineFrame2{
+        width:70%;
+    }
+}
+
+/* MILLENIUM */
+
+.millContainer{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    margin-top:3vw;
+}
+
+.millTitleContainer{
+    width:90%;
+    display:flex;
+    justify-content:center;
+}
+
+.millTitleS{
+    display:flex;
+    justify-content:space-around;
+    width:90%;
+}
+
+.millTitle{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    font-family: geo;
+    color:white;
+    font-size:3.1vw;
+    margin-bottom:3vw;
+}
+
+.millTitle > img{
+    margin-top:4vw;
+    width:70%;
+}
+
+.millFiller{
+    height:1px;
+}
+
+.millSlash1{
+    display: flex;
+    align-items: center;
+    width:20%;
+    height:80%;
+    padding-left:20px;
+}
+
+.millSlash1 > img{
+    width:80%;
+}
+
+.millSlash2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right:20px;
+    width:20%;
+    height:80%;
+}
+
+.millSlash2 > img{
+    width:50%;
+}
+
+.millSlash3{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width:20%;
+    height:90%;
+}
+
+.millSlash3 > img{
+    width:100%;
+
+}
+
+.millSlash4{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right:20px;
+    width:20%;
+    height:90%;
+}
+
+.millSlash4 > img{
+    width:100%;
+}
+
+.millVidContainer{
+    display: flex;
+    justify-content:center;
+   }
+
+   .millPic{
+    display:flex;   
+    justify-content: space-around;
+    align-items: center;
+    width:90%;
+}
+.millFrame{
+width:40%;
+}
+
+.millFrame2{
+    height:100%;
+    width:40%;
+}
+
+.millTitlePic{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    width:70%;
+}
+
+
+.millTitlePic > img{
+   width:15%;
+   margin-bottom:5px;
+}
+
+.millTitlePic2{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    width:70%;
+}
+
+
+.millTitlePic2 > img{
+   width:23%;
+   margin-bottom:-2vw;
+}
+
+
+.millFrame3{
+    width:30%
+}
+
+.millFrame4{
+    width:35%;
+}
+
+.millTitleW{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: geo;
+    color:white;
+    line-height:0;
+    font-size:3.1vw;
+}
+
+.rightTitleMill{
+    color:white;
+    font-family:geo;
+    display:flex;
+    font-size:1vw;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    background-image:url('../assets/millenium/endMill.png');
+    background-size: cover;
+    background-position:center;
+    padding:15px;
+}
+
+/* NVIDIA */
+
+.rightTitleNvidia{
+    color:white;
+    font-family:geo;
+    display:flex;
+    font-size:1vw;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    background-image:url('../assets/nvidia/end.png');
+    background-size: cover;
+    background-position:center;
+    padding:15px;
+}
+
+/* MOBILY */
+
+.mobilyVidContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   }
+
+
+.mobilyPic{
+    display:flex;   
+    justify-content: space-around;
+    align-items: center;
+    width:50%;
+}
+.mobilyFrame{
+    width:30%;
+}
+
+.mobilyTitlePic{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    width:65%;
+}
+
+
+.mobilyTitlePic > img{
+   width:25%;
+   margin-bottom:-9vw;
+}
+
+.mobilyVid{
+    display:flex;   
+    justify-content: center;
+    width:100%;
+    height:500px;
+    margin-bottom:40px;
+}
+
+.mobilyTitle{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    font-family: geo;
+    color:white;
+    font-size:3.1vw;
+}
+
+.mobilyTitle > img{
+    width:20%;
+}
+
+.promoVidContainer{
+    display:flex;
+    justify-content:center;
+    width:70%;
+    margin:0 auto;
+   }
+
+   .promoVid{
+    display:flex;   
+    justify-content: space-around;
+    width:100%;
+    height:400px;
+    margin-bottom:40px;
+}
+
+.promoFrame{
+    width:45%;
+}
+
+.mobilyWebsite{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    margin-top:2vw;
+}
+
+.mobWeb{
+    width:20%;
+}
+.mobWeb > img {
+    width:100%;
+}
+.mobilySlash{
+    margin-top:5vw;
+    padding-right:1vw;
+    width:40%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-start
+}
+.mobilySlash2{
+    margin-top:5vw;
+    padding-left:1vw;
+    width:40%;
+}
+.mobilySlash > img {
+    width: 30%;
+}
+
+.mobilySlash2 > img {
+    width: 30%;
+}
+
+.mobPosts{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+}
+.postSlash{
+    width:13%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.postSlash > img{
+    width:100%;
+}
+.mobPic{
+    width:27%;
+}
+.mobPic > img{
+    width:100%;
+}
+
+/* PRINGLES */
+
+.pringlesCup{
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+
+.pringlesCup > img{
+    width:10%;
+}
+
+.pringlesShow{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    margin-top:20px;
+}
+
+.pringlesShowPics{
+    width:80%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.showLine1{
+    width:100%;
+display:flex;
+justify-content: center;
+}
+
+.showLine1 > img{
+    width:55%;
+    margin:10px;
+}
+
+.showLine2{
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+
+.showLine2 > img{
+    width:55%;
+
+}
+
+.showSlash{
+    width:45%;
+}
+.showSlash > img{
+    width:100%;
+    padding:15px;
+}
+
+.pringleTitlePic{
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    width:30%;
+}
+
+.pringleTitlePic > img{
+   width:30%;
+}
+
+.pringleTitleContainer{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    margin-bottom:-3vw;
+}
+
+/* REDBULL */
+
+.redbullTitlePic{
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    width:20%;
+}
+
+.redbullTitlePic > img{
+   width:30%;
+}
+
+.redbullPic{
+    display:flex;   
+    justify-content: center;
+    align-items: center;
+    margin-bottom:40px;
+}
+
+.redBullContainer{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+}
+.redBullMini{
+    width:70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.redBullMini > img{
+    width:40%
+    
+}
+
+/* RUSH */
+
+.rushTeamContainer{
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+
+.rushTeamMember{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    width:12%;
+    margin:4px;
+}
+
+.lebanon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:20px;
+}
+
+.lebanon > img{
+    height:40px;
+}
+
+.memberPic{
+    
+}
+
+.memberPic > img{
+width:100%;
+}
+
+.memberIGN{
+    text-align:center;
+    color:white;
+    font-size:24px;
+}
+
+.memberIRL{
+    text-align:center;
+    color:white;
+    font-size:12px;
+    font-family: geo;
+
+}
