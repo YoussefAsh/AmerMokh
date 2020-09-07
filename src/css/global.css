@@ -49,10 +49,11 @@ body{
     display:flex;
     justify-content: center;
     align-items:center;
+    padding-top:60px;
 }
 
  .navbarBrandP > img {
-    height:100%;
+    height:120px;
  }
 
  .navbar-nav{
@@ -84,6 +85,15 @@ body{
     z-index:-1;
     right:0;
     mix-blend-mode: color;
+ }
+
+ .navBG3{
+    position: absolute;
+    width:88%;
+    height:100%;
+    z-index:-1;
+    right:0;
+    opacity:0.6;
  }
 
 .bio{
@@ -906,7 +916,7 @@ button{
     /* CHEVROLET */
 
 .chevBody{
-    background: url('../assets/chevrolet/ChevBigBG.png');
+    background: url('../assets/BG/realBG.png');
     background-size: 100%;
 }
     
@@ -964,6 +974,10 @@ button{
      font-size:3.1vw;
      margin-top:5%;
      line-height:0;
+ }
+
+ .chevColor{
+    text-shadow: -3px 3px 0px #D7A53F;
  }
 
  .chevTitlePic{
@@ -1028,8 +1042,18 @@ button{
     }
  @media (max-width:768px){
 
+    .navbarBrandP{
+        height:auto;
+        padding-top:0;
+    }
+
     .navbarBrandP > img {
         height:50px;
+
+     }
+
+     .chevColor{
+        text-shadow: -2px 2px 0px #D7A53F;
      }
 
     .navbarChev > img{
@@ -1077,19 +1101,20 @@ button{
      }
 
      .end{
-        height:70px;
      }
 
      .end > img{
-         width:40%;
+         width:30%;
+         margin-bottom:10px;
      }
-     .rightTitleChev{
+     .chevEnd{
          position: absolute;
          bottom:0;
+         width:100%;
      }
 
      .chevBody{
-        background-size: contain;
+        background-size: cover;
 
      }
  }
@@ -1149,6 +1174,18 @@ button{
         width:80%;
     }
 
+    .lupakRight{
+        position: absolute;
+        top:0;
+        right:0;
+        background:red;
+        height:20%;
+    }
+    .lupakRight > img {
+        height:100%;
+    }
+
+
     .rightTitleAtyab{
         color:white;
         font-family:geo;
@@ -1202,6 +1239,7 @@ button{
     .atyabVid{
         height:476px;
         width:476px;
+        position: relative;
     }
 
     .atyabVid2{
@@ -1223,6 +1261,25 @@ button{
     .atyabBar > img{
         width:60%;
     }
+
+    @media (max-width:768px){
+
+        .atyabVidContainer{
+            margin-bottom:20px;
+        }
+
+        .atyabBar{
+            margin-top:20px;
+        }
+        .atyabVid{
+            height:238px;
+            width:238px;
+            position: relative;
+        }
+        
+    }
+
+    
 
     /* DIVINE VENDETA*/
 
@@ -1284,7 +1341,7 @@ button{
     display:flex;   
     justify-content: center;
     width:100%;
-    height:500px;
+    height:720px;
 }
 
 .divineFrame{
@@ -1303,12 +1360,13 @@ button{
 
 
 .divineFrame2{
-    width:60%;
+    width:70%;
     height:100%;
 }
 
 .divineFrame3{
     width:70%;
+    height:100%;
 }
 
 
@@ -1321,6 +1379,21 @@ button{
 }
 
 .divineSlash > img{
+    width:70%;
+}
+
+
+.polarisSlash{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width:20%;
+    height:80%;
+    padding-right:20px;
+    padding-top:20px;
+}
+
+.polarisSlash > img{
     width:70%;
 }
 
@@ -1402,14 +1475,17 @@ button{
 @media (max-width:768px){
 
     .divineBar{
-        margin-top:0;
     }
 
     .divineTitle{
         font-size:24px;
-        padding-top: 15px;
         padding-bottom:15px;
     }
+
+    .divineTitleW{
+        font-size:24px;
+    }
+
 
     .divineTitlePic{
         display:flex;
@@ -1429,10 +1505,6 @@ button{
 
     .divineFrame{
         width:100%;
-    }
-
-    .divineVid{
-        height:250px;
     }
 
     .divineFrame2{
@@ -1664,7 +1736,7 @@ width:40%;
     display:flex;   
     justify-content: center;
     width:100%;
-    height:500px;
+    height:700px;
     margin-bottom:40px;
 }
 
@@ -1847,6 +1919,18 @@ align-items:center;
    width:30%;
 }
 
+.rushTitlePic{
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    width:55%;
+}
+
+.rushTitlePic > img{
+   width:17%;
+}
+
+
 .redbullPic{
     display:flex;   
     justify-content: center;
@@ -1963,3 +2047,110 @@ width:100%;
     background: url('../assets/BG/realBG.png');
     background-size: 100%;   
 }
+
+/* PHONE TITLES*/
+
+.atyabColor{
+    text-shadow: -3px 3px 0px #DE4769;
+
+}
+
+@media (max-width:1600px){
+    .divineVid{
+        height:500px;
+    }
+    .mobilyVid{
+        height:500px;
+    }
+}
+
+@media (max-width:768px){
+
+    .mobilyTitle{
+        font-size:36px;
+    }
+
+    .divineTitle{
+        font-size:36px;
+    }
+    .divineTitleW{
+        font-size:36px;
+    }
+    .polarisTitle{
+        font-size:24px;
+    }
+    .divineVid{
+        height:200px;
+    }
+    .mobilyVid{
+        height:200px;
+    }
+
+    .atyabTitle{
+        font-size:36px;
+
+    }
+
+    .atyabColor{
+        text-shadow: -2px 2px 0px #DE4769;
+    
+    }
+
+    .atyabTitlePic{
+        visibility: hidden;
+    }
+
+    .atyabBody{
+        background-size:cover;
+    }
+    .divineSlash > img{
+        width:100%;
+    }
+    .polarisSlash > img{
+        width:70%;
+    }
+    .millSlash1 > img{
+        width:100%;
+    }
+    .millSlash2 > img{
+        width:100%;
+    }
+    .promoVidContainer{
+        width:90%;
+    }
+    .promoVid{
+        height:200px;
+        margin-bottom:20px;
+    }
+
+    .mobWeb{
+        width:50%;
+    }
+
+    .mobilySlash > img{
+        width:90%;
+    }
+    .mobilySlash2 > img{
+        width:90%;
+
+    }
+
+    .pringlesCup > img {
+        width:30%;
+    }
+    .pringleTitlePic > img{
+        width:60%;
+     }
+
+.redbullTitlePic > img{
+    width:50%;
+ }
+
+    .rushTitle{
+        font-size:24px;
+    }
+    .rushTitlePic > img{
+        width:30%;
+     }
+}
+
