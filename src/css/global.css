@@ -2482,9 +2482,12 @@ width:100%;
 }
 
 /** NTNT **/
-
+.giantNT{
+    background:url('../assets/NTNT/1x/NTBG.png');
+    background-size:cover;
+}
 .ntBannerContainer{
-    background:url('../assets/NTNT/NTNT_BG.png');
+    
     background-size:cover;
     width:100%;
     height:45vw;
