@@ -8,12 +8,30 @@ body{
 }
 
 @font-face {
+    font-family: lato;
+    src: url('../fonts/Lato-Light.ttf');
+  }
+
+  @font-face {
+    font-family: latothin;
+    src: url('../fonts/Lato-Thin.ttf');
+  }
+
+@font-face {
     font-family: geo;
     src: url('../fonts/Geogtq-Sb.otf');
   }
   @font-face {
     font-family: drone;
     src: url('../fonts/FontsFree-Net-drone-ranger-01-inked.ttf');
+  }
+  @font-face {
+    font-family: fleur;
+    src: url('../fonts/Fleur.otf');
+  }
+  @font-face {
+    font-family: dotcom;
+    src: url('../fonts/Dotcom\ Regular.otf');
   }
 
   .homeNav{
@@ -43,13 +61,28 @@ body{
     width:70%;
  }
 
+ .navDivine > img{
+     width:65%;
+     padding-top:10px;
+ }
+
+ .navMobily > img{
+    width:60%;
+    padding-top:10px;
+ }
+
+ .navRush > img{
+    width:70%;
+    padding-top:10px;
+ }
+
  .navbarBrandP{
     height:100%;  
     width:12%; 
     display:flex;
     justify-content: center;
     align-items:center;
-    padding-top:60px;
+    padding-top:65px;
 }
 
  .navbarBrandP > img {
@@ -119,10 +152,15 @@ body{
 }
 
 .bioIntro{
+    display:flex;
+    align-items:flex-end;
+    height:50%;
     width:70%;
     font-size:1.5vw;
     padding-bottom:20px;
 }
+
+
 
 h1{
     font-size:3vw;
@@ -131,6 +169,8 @@ h1{
 
 .bioFill{
 width:70%;
+text-align:justify;
+height:50%;
 }
 
 .bioSign{
@@ -229,7 +269,7 @@ height:90%;
     display:flex;
     justify-content:space-around;
     flex-wrap:wrap;
-    width:100%;
+    width:80%;
     margin-top:15px;
     margin-bottom:15px;
 }
@@ -243,20 +283,20 @@ height:90%;
     margin-top:30px;
     margin-bottom:30px;
     height:150px;
+    filter:grayscale(100%);
+    transition:.5s all;
 }
 
 
 .aCredential > img{
- width:70%;
- filter:grayscale(100%);
- transition:.5s all;
+    width:80%;
 }
 
 .pringle{
     width:40% !important;
 }
 
-.aCredential > img:hover{
+.aCredential:hover{
     filter:grayscale(0%);
     transform: scale(1.2);
 }
@@ -319,7 +359,7 @@ margin:5px;
 }
 
 .contactFiller{
-    height:100vh;
+    height:46vw;
     width:100%;
     display:flex;
     justify-content:center;
@@ -769,7 +809,7 @@ button{
 
         .bio{
             background:url('../assets/textures/chalk.png');
-            height:70vh;
+            height:90vh;
             flex-direction: column;
             justify-content: center;
             align-items:center;
@@ -777,20 +817,28 @@ button{
 
         .bioText{
             align-items:center;
-            justify-content: center;
+            justify-content: flex-start;
             width:100%;
             padding:20px;
             height:60%;
+            padding-top:5px;
         }
         .bioIntro{
             position:relative;
             font-size:20px;
             display:flex;
             flex-direction: column;
+            align-items:flex-start;
             width:90%;
+            padding-bottom:0;
+            height:auto !important;
         }
-        .bioIntro > h1{
+        .bioIntro > div > h1{
             font-size:40px;
+        }
+        .bioFill{
+            height:30%;
+            margin-top:5px;
         }
         .bioSign{
             display:flex;
@@ -980,6 +1028,10 @@ button{
     text-shadow: -3px 3px 0px #D7A53F;
  }
 
+ .millColor{
+    text-shadow: -3px 3px 0px #7373FF;
+ }
+
  .chevTitlePic{
      display:flex;
      justify-content: flex-end;
@@ -1056,6 +1108,12 @@ button{
         text-shadow: -2px 2px 0px #D7A53F;
      }
 
+     .millColor{
+        text-shadow: -2px 2px 0px #D7A53F;
+     }
+     .mobColor{
+     text-shadow: -2px 2px 0px #179BD7;
+     }
     .navbarChev > img{
         padding-top:25px;
         padding-bottom:5px;
@@ -1369,6 +1427,32 @@ button{
     height:100%;
 }
 
+.smallerSlash{
+    display: flex;
+    align-items: center;
+    width:20%;
+    height:80%;
+    padding-left:20px;
+}
+
+.smallerSlash > img{
+    width:60%;
+}
+
+
+.smallerSlash2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width:20%;
+    height:80%;
+    padding-right:20px;
+}
+
+.smallerSlash2 > img{
+    width:60%;
+}
+
 
 .divineSlash{
     display: flex;
@@ -1613,7 +1697,8 @@ button{
     display:flex;   
     justify-content: space-around;
     align-items: center;
-    width:90%;
+    width:80%;
+    height:400px;
 }
 .millFrame{
 width:40%;
@@ -1857,12 +1942,13 @@ width:40%;
 
 .showLine1{
     width:100%;
-display:flex;
-justify-content: center;
-align-items:center;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:400px;
 }
 
-.showLine1 > img{
+.showLine1 > iframe{
     width:55%;
     margin:10px;
 }
@@ -1872,16 +1958,17 @@ align-items:center;
     display:flex;
     justify-content: center;
     align-items:center;
+    height:400px;
 
 }
 
-.showLine2 > img{
-    width:55%;
-
+.showLine2 > iframe{
+    width:65%;
+    margin-top:20px;
 }
 
 .showSlash{
-    width:45%;
+    width:35%;
 }
 .showSlash > img{
     width:100%;
@@ -1948,12 +2035,10 @@ align-items:center;
     width:70%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 .redBullMini > img{
-    width:40%
+    width:80%
     
 }
 
@@ -2055,12 +2140,53 @@ width:100%;
 
 }
 
+.mobColor{
+    text-shadow: -3px 3px 0px #179BD7;
+}
+
+.nvidiaColor{
+    text-shadow: -3px 3px 0px #76B900;
+}
+
+.polarisColor{
+    text-shadow: -3px 3px 0px #3254A0;
+}
+.pringlesColor{
+    text-shadow: -3px 3px 0px #CD1E38;
+}
+
+.redbullColor{
+    text-shadow: -3px 3px 0px #DB0A40;
+}
+
+.spotnetColor{
+    text-shadow: -3px 3px 0px #A00C10;
+}
+
+.rushColor{
+    text-shadow: -3px 3px 0px rgba(255, 255, 255, 0.3);
+}
+
+.tremfyaColor{
+    text-shadow: -3px 3px 0px #0ab3aa;
+}
+
+.tencentColor{
+    text-shadow: -3px 3px 0px #0ab3aa;
+}
+
 @media (max-width:1600px){
     .divineVid{
         height:500px;
     }
     .mobilyVid{
         height:500px;
+    }
+    .bioIntro{
+        height:45%;
+    }
+    .bioFiller{
+
     }
 }
 
@@ -2091,14 +2217,36 @@ width:100%;
 
     }
 
+    .nvidiaColor{
+        text-shadow: -2px 2px 0px #76B900;
+    }
+
+    .rushColor{
+        text-shadow: -2px 2px 0px rgba(255, 255, 255, 0.3);
+    }
+
     .atyabColor{
         text-shadow: -2px 2px 0px #DE4769;
     
     }
+       .polarisColor{
+    text-shadow: -2px 2px 0px #3254A0;
+       }
 
+       .pringlesColor{
+        text-shadow: -2px 2px 0px #CD1E38;
+    }
+    .redbullColor{
+        text-shadow: -2px 2px 0px #DB0A40;
+    }
+    .spotnetColor{
+        text-shadow: -2px 2px 0px #A00C10;
+    }
     .atyabTitlePic{
         visibility: hidden;
     }
+
+
 
     .atyabBody{
         background-size:cover;
@@ -2152,5 +2300,868 @@ width:100%;
     .rushTitlePic > img{
         width:30%;
      }
+
+     .memberIGN{
+         font-size:16px;
+     }
+    
+     .lebanon > img{
+         height:20px;
+     }
+
+     .rushTeamContainer{
+        flex-wrap:wrap;
+     }
+
+     .rushTeamMember{
+         width:20%;
+     }
+     .credentialList{
+        width:100%;
+    }
+}
+/*CREDNETIALS*/
+
+.redbull{
+    width:90% !important;
 }
 
+.polaris{
+    width:100% !important;
+}
+
+.nvidia{
+    width:90% !important;
+}
+
+.chev{
+    width:70% !important; 
+}
+
+.mob{
+    width:70% !important;
+}
+
+.pringle{
+    width:45% !important
+}
+
+/** TREMFYA **/
+
+.rightTitleTremfya{
+    color:white;
+    font-family:geo;
+    display:flex;
+    font-size:1vw;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    background-image:url('../assets/tremfya/end.png');
+    background-size: cover;
+    background-position:center;
+    padding:15px;
+    }
+
+    /** TENCENT **/
+
+    .divineVidContainer{
+        display: flex;
+        justify-content:center;
+       }
+
+       .tencentVid{
+        display:flex;   
+        justify-content: center;
+        width:95%;
+        height:25vw;
+    }
+
+    .tencentFrame{
+        width:49%;
+        height:100%;
+        margin:5px;
+    }
+
+    .tencentPosters{
+        display:flex;
+        justify-content: center;
+        width:100%;
+    }
+
+    .posterContainer{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width:90%;
+    }
+
+    .poster{
+        width:32%;
+        margin:2px;
+    }
+
+    .poster3d{
+        display:flex;   
+        justify-content: center;
+        width:100%;
+    }
+
+    .poster3d > img{
+        width:80%;
+    }
+
+    .rightTitleTencent{
+        color:white;
+        font-family:geo;
+        display:flex;
+        font-size:1vw;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+        background-image:url('../assets/tencent/end.png');
+        background-size: cover;
+        background-position:center;
+        padding:15px;
+        }
+/** FINAL CLASH **/
+
+.finalClashLogo{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.finalClashLogo > img{
+    width:30%;
+}
+
+.singleVidContainer{
+    display:flex;   
+    justify-content: center;
+    width:95%;
+    height:38vw;
+}
+
+.singleVid{
+    width:70%;
+    height:100%;
+    margin:5px;
+}
+
+
+.hudContainer{
+    display:flex;   
+    justify-content: center;
+    flex-wrap: wrap;
+    width:95%;
+}
+
+.hudContainer > img{
+    width:85%;
+    margin:5px;
+}
+
+/** PLAY WITH ZAIN **/
+
+.tripleVidContainer{
+    display:flex;   
+    justify-content: center;
+    width:95%;
+    height:20vw;
+}
+
+.tripleVid{
+    width:33%;
+    margin:5px;
+}
+
+.zainColor{
+    text-shadow: -3px 3px 0px #e90086;
+
+}
+
+/** NTNT **/
+
+.ntBannerContainer{
+    background:url('../assets/NTNT/NTNT_BG.png');
+    background-size:cover;
+    width:100%;
+    height:45vw;
+    display: flex;
+    align-items:flex-start;
+}
+
+.ntBanner{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:6.3vw;
+    color:white;
+    letter-spacing: 0.4vw;
+}   
+
+.ntBanner > img{
+    width:40%;
+}
+
+.section1{
+    width:100%;
+    height:110vw;  
+    /** background:red; **/
+    margin-top:-110px;
+    display: flex;
+}
+
+.leftSec1{
+    /** background:blue; **/
+    height:100%;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.about{
+    background:black;
+    width:80%;
+    height:31%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutBox{
+    width:80%;
+    height:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.aboutTitleNT{
+    color:white;
+    font-size:4.5vw;
+    font-family: fleur;
+}
+
+.aboutTitleNT > span {
+    border-bottom: 4px solid #3FCCFF;
+}
+
+
+.aboutBody{
+    color:white;
+    font-size:1vw;
+    font-family: dotcom;
+
+}
+
+.eventPic{
+    background:url('../assets/NTNT/300ppi/eventBg.png');
+    background-size: cover;
+    width:80%;
+    height:54%;
+    display: flex;
+    flex-direction: column;
+}
+
+.eventTitle{
+    margin-top:20px;
+    width:100%;
+    height:15%;
+    color:white;
+    font-size:4.5vw;
+    font-family: fleur;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventTitle > div > span {
+    border-bottom: 4px solid #3FCCFF;
+}
+
+.eventFiller{
+/* background:green; */
+height:85%;
+display: flex;
+}
+
+.eventPic2{
+width:80%;
+height:90%;
+/* background:black; */
+}
+
+.eventPic2 > img{
+    position:relative;
+    margin-top:15%;
+    right:3vw;
+    width:100%;
+}
+
+.eventLines{
+width:20%;
+height:80%;
+/* background:violet; */
+}
+
+
+.rightSec1{
+    /* background:white; */
+    height:100%;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+
+.aboutPic{
+/* background:red; */
+height:40%;
+width:85%;
+}
+
+.aboutPic > img{
+    width:100%;
+}
+
+.event{
+/* background:pink; */
+height:45%;
+width:97%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.eventD{
+    /* background:red; */
+    height:25%;
+    width:80%;
+    display:flex;
+    color:white;
+}
+
+.eventN{
+width:15.5%;
+height:100%;
+display:flex;
+align-items: center;
+justify-content: center;
+font-size:3vw;
+font-family: lato;
+color:white;
+text-decoration: underline 4px;
+text-decoration-color: #3FCCFF;
+
+}
+
+.eventI{
+width:80%;
+height:100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.eventT{
+position: relative;
+vertical-align: middle;
+font-size:2vw;
+font-family: fleur;
+}
+
+.eventT2{
+    font-size:1.2vw;
+font-family: dotcom;
+}
+
+
+
+
+
+.section2{
+width:100%;
+height:50vw;
+/* background:red; */
+display:flex;
+flex-direction: column;
+
+}
+
+.webinarBox{
+height:100%;
+width:100%;
+display:flex;
+}
+
+.webinarTitle{
+width:100%;
+height:10%;
+/* background:blue; */
+display:flex;
+flex-direction: column;
+align-items:center;
+font-family: fleur;
+color:white;
+margin-top:40px;
+margin-bottom:40px;
+
+}
+
+.webinarTitleM{
+font-size:4.3vw;
+height:90%;
+/* background:red; */
+}
+
+.webinarTitleM > span{
+    color:black;
+    background:#00B9F9;
+}
+
+.webinarTitleS{
+width:36%;
+display:flex;
+justify-content: flex-end;
+height:10%;
+z-index:2;
+font-size:1vw;
+}
+
+.webinarLeft{
+height:100%;
+width:35%;
+/* background:black; */
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.webinarRight{
+height:100%;
+width:65%;
+/* background:white; */
+display:flex;
+justify-content: flex-end;
+}
+
+.webinarB{
+    width:80%;
+    height:100%;
+    background:url('../assets/NTNT/300ppi/webinarBG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.webinarB > img{
+    width:110%;
+    position: relative;
+    top:5%;
+    right:15%;
+
+}
+
+.webinarD{
+    width:100%;
+    height:23%;
+    /* background:blue; */
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+}
+
+.webinarN{
+font-family:latothin;
+font-size:3vw;
+width:10%;
+display: flex;
+justify-content: center;
+}
+
+.webinarI{
+width:80%;
+}
+
+.webinarT{
+    font-family:fleur;
+    font-size:2.5vw;
+}
+
+.webinarT2{
+    position:relative;
+font-family:dotcom;
+font-size:1vw
+}
+
+
+
+
+
+
+
+.section3{
+    width:100%;
+    height:45vw;
+    /* background:red; */
+    display:flex;
+    justify-content: space-between;
+}
+
+.virtualContainer{
+    width:60%;
+    height:100%;
+    /* background:blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.virtualTitle{
+font-size:4.5vw;
+font-family: fleur;
+color:white;
+height:10%;
+width:90%;
+/* background:black; */
+}
+
+.virtualTitle > span {
+    border-bottom: 4px solid #3FCCFF;
+}
+
+
+.virtualPic{
+    display:flex;
+    justify-content: center;
+height:80%;
+width:100%;
+/* background:white; */
+}
+
+.virtualPic > img{
+    width:85%;
+}
+
+.virtualInfo{
+width:35%;
+height:100%;
+/* background:violet; */
+display: flex;
+align-items:center;
+
+}
+
+.virtualText{
+    height:90%;
+    display:flex;   
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.virtualD{
+    display:flex;
+    flex-direction: column;
+    height:30%;
+    color:white;
+    /* background:red; */
+
+}
+
+.virtualN{
+font-family:latothin;
+font-size:2.7vw;
+color:black;
+
+}
+
+.virtualN > span{
+    background:#00B9F9;
+}
+
+.virtualT{
+font-family:fleur;
+font-size:2vw;
+}
+.virtualI{
+font-family:dotcom;
+font-size:1vw;
+}
+
+.section4{
+margin-top:20px;
+width:100%;
+height:60vw;
+display:flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.leftTremfya{
+height:100%;
+width:35%;
+display:flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
+.tremPic{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.tremPic > img{
+    width:85%;
+}
+
+.rightTremfya{
+height:100%;
+width:65%;
+}
+
+.rightTremfya > img{
+    width:100%;
+}
+
+
+
+
+.section5{
+    margin-top:20px;
+    width:100%;
+    height:45vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bmwL{
+width:60%;
+height:100%;
+/* background:red; */
+display:flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+background:url('../assets/NTNT/1x/bmwBG.png');
+background-size: cover;
+}
+
+.bmwT{
+width:80%;
+color:white;
+font-family:fleur;
+font-size:64px;
+}
+
+.bmwT > span {
+    border-bottom: 4px solid #3FCCFF;
+}
+
+.bmwH{
+width:100%;
+display:flex;
+justify-content: center;
+}
+
+.bmwH > img{
+    width:80%;
+}
+
+.bmwR{
+    width:35%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bmwPic{
+width:100%;
+height:33%;
+display:flex;
+justify-content: center;
+align-items:center;
+}
+
+.bmwPic > img{
+    width:70%;
+}
+
+.section6{
+    margin-top:20px;
+    width:100%;
+    height:56vw;
+    display: flex;
+    justify-content: space-between;
+}
+.eventBigC{
+    width:62.3%;
+height:100%;
+}
+
+.eventBigC > img{
+    width:100%;
+}
+
+
+
+
+
+.section7{
+    width:100%;
+    /* background:red; */
+    height:45vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editingT{
+    color:White;
+    font-family: fleur;
+    width:95%;
+    height:10%;
+    font-size:4vw;
+    margin-bottom:30px;
+    }
+    
+    .editingT > span{
+        color:black;
+        background:#00B9F9;
+    }
+
+
+.editingBox{
+width:100%;
+height:90%;
+/* background:pink; */
+display: flex;
+justify-content: space-around;
+}
+
+.editingList{
+    width:38%;
+    height:100%;
+    /* background:black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.editingPics{
+    width:60%;
+    height:100%;
+    /* background:white; */
+    display:flex;
+    justify-content: flex-end;
+}
+
+.editingMultiple{
+    width:45%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.editingPic1{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.editingPic1 > img{
+    width:85%;
+}
+
+.editingBig{
+    width:50%;
+    height:100%;
+}
+
+.editingBig > img{
+    width:90.5%;
+}
+
+
+
+
+.section8{
+    margin-top:6vw;
+    height:35vw;
+    width:100%;
+    /* background:red; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+.serviceTitle{
+color:white;
+/* background:blue; */
+width:90%;
+height:10%;
+}
+
+.serviceTitle > span{
+    border-bottom: 4px solid #3FCCFF;
+    font-family:fleur;
+    font-size:3vw;
+}
+
+.servicesNt{
+    width:100%;
+    height:90%;
+    /* background:grey; */
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+
+}
+
+.serviceBox{
+    height:70%;
+    width:23%;
+    background:url('../assets/NTNT/1x/serviceBG.png');
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.serviceT{
+width:90%;
+border-bottom: 4px solid #3FCCFF;
+font-family:fleur;
+font-size:2vw;
+
+}
+
+.serviceBullets{
+height:75%;
+width:90%;
+display:flex;
+flex-direction: column;
+justify-content: space-around;
+font-family:dotcom;
+font-size:1vw;
+}
